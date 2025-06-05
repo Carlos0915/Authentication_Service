@@ -50,6 +50,7 @@ public class AuthService : IAuthService
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim("ci", user.Ci.ToString()),
             new Claim("numero", user.NumberPhone.ToString()),
+            new Claim("Nombre", user.Name.ToString()),
             new Claim(ClaimTypes.Role, user.Role),
         };
 
